@@ -5,7 +5,13 @@ After completing `a6_part1.py` answer the following questions
 ## Questions to answer
 
 1. What is the r squared value?  What does this say about this lenear regression model?
+0.980744730057756 they are stronlgy positivly corrilted
+
 
 2. According to your model, what is the predicted systolic blood pressure for a person iwho is 43 years old?
+137.46185286
+
 
 3. How accurate do you think this model's predictions are?  Do you think this model is accurate enough to reliably predict someone's blood pressure based on their age?  Why or why not?  And if not, what could improve the model?
+
+Since the data is strongly correlated it can be somehwat reloable to predict someone blood presure by there age. But it would have to be for like the avg person with no other condtions that could affect there blood pressure like some illness or stif like that.
