@@ -21,19 +21,27 @@ coef = np.around(model.coef_, 2)
 intercept = round(float(model.intercept_), 2)
 r_squared = round(model.score(x, y),2)
 
-print(f"Model's Linear Equation: y={coef[0]}x1 + {coef[1]}x2 + {coef[2]}x3 + {intercept}")
+print(f"Model's Linear Equation: y={coef[0]}x1 + {coef[1]}x2 + {intercept}")
 print("R Squared value:", r_squared)
+
+ ## .86 r 2
+#Loop through the data and print out the predicted prices and the 
+#actual prices
+print("***************")
+print("Testing Results")
 
 predict = model.predict(xtest)
 predict = np.around(predict, 2)
+
 print(predict)
 
-#Loop through the data and print out the predicted prices and the 
-#actual prices
-for index in range(len(xtest)):
-    actual = ytest[index] # gets the actual y value from the ytest dataset
-    predicted_y = predict[index] # gets the predicted y value from the predict variable
-    x_coord = xtest[index] # gets the x value from the xtest dataset
-    print(f"Adult Population: {x_coord[0]} Annual Percipitation: {x_coord[1]} Winter Severity: {x_coord[2]} Actual: {actual} Predicted: {predicted_y}")
-print("***************")
-print("Testing Results")
+# for index in range(len(xtest)):
+#     actual = ytest[index] # gets the actual y value from the ytest dataset
+#     predicted_y = predict[index] # gets the predicted y value from the predict variable
+#     x_coord = xtest[index] # gets the x value from the xtest dataset
+#     x_coord = x_coord
+#     print(f"Miles(000): {x_coord[0]} Age: {x_coord[1]} Actual: {actual} Predicted: {predicted_y}")
+
+cars = [[89, 10], [150, 20]]
+my_predictions = model.predict(cars)
+print(my_predictions)
