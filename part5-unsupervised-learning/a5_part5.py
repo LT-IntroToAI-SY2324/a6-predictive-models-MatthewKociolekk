@@ -9,14 +9,17 @@ x = data[["Annual Income", "Spending Score"]]
 
 #standardize the data
 
+x_std = StandardScaler().fit_transform(data)
 
 #the value of k has been defined for you
 k = 5
 
 #apply the kmeans algorithm
 
+km = KMeans(n_clusters=k).fit(x_std)
 
 #get the centroid and label values
+
 
 
 #sets the size of the graph
